@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cat Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+    <div class="header__container">
+        <div class="header__top">
+            <div class="header__left">
+                <div class="logo">
+                    <a href="#"><img src="img/logo.svg" alt="logo"></a>
+                </div>
+                <ul class="navigation">
+                    <li class="navigation__item"><a class="navigation__link" href="#">Main</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#">Gallery</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#">News</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#">Profile</a></li>
+                </ul>
+            </div>
+            <div class="header__right">
+                <h2 class="header__number">+544 3490 00000</h2>
+                <p class="header__text">Звони скорее!</p>
+            </div>
+        </div>
+        <h1 class="heading-text">Найдено 349 котов</h1>
+    </div>
+</header>
+<div class="sort center">
+    <p class="sort__text">Сортировать по:</p>
+    <div class="sort__item">
+        <p class="sort__item_text">
+            Цене
+        </p>
+        <img class="vector_svg" src="img/Vector.svg" alt="">
+    </div>
+    <div class="sort__item">
+        <p class="sort__item_text">
+            Возрасту
+        </p>
+        <img class="vector_svg" src="img/Vector.svg" alt="">
+    </div>
+</div>
+<div id="catalog" class="catalog center">
+    <div class="catalog__item" data-price="30000">
+        <img class="catalog__item_img" src="img/cat1.jpg" alt="">
+        <div class="catalog__content">
+            <a href="#"><h4 class="catalog__heading">Кот полосатый</h4></a>
+            <div class="catalog__description">
+                <div class="catalog__description_line">
+                    <p class="catalog__text">Коричневый окрас</p>
+                </div>
+                <div>
+                    <p class="catalog__text_bold">2 мес.</p>
+                    <p class="catalog__text">Возраст</p>
+                </div>
+                <div>
+                    <p class="catalog__text_bold">4</p>
+                    <p class="catalog__text">Кол-во лап</p>
+                </div>
+            </div>
+            <h5 class="catalog__price">30 000 руб.</h5>
+        </div>
+        <a href="#" class="catalog__button">
+            Купить
+        </a>
+        <div class="catalog__heart">
+            <svg width="46" height="42" viewBox="0 0 46 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="catalog__heart_mod" d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z" fill="white" fill-opacity="0.5"/>
+            </svg>
+        </div>
+        <div class="catalog__discount">
+            <p class="catalog__discount_text">-40%</p>
+        </div>
+    </div>
+    <div class="catalog__item" data-price="40000">
+        <img class="catalog__item_img" src="img/cat2.jpg" alt="">
+        <div class="catalog__content">
+            <a href="#"><h4 class="catalog__heading">Кот полосатый</h4></a>
+            <div class="catalog__description">
+                <div class="catalog__description_line">
+                    <p class="catalog__text">Коричневый окрас</p>
+                </div>
+                <div>
+                    <p class="catalog__text_bold">2 мес.</p>
+                    <p class="catalog__text">Возраст</p>
+                </div>
+                <div>
+                    <p class="catalog__text_bold">4</p>
+                    <p class="catalog__text">Кол-во лап</p>
+                </div>
+            </div>
+            <h5 class="catalog__price">40 000 руб.</h5>
+        </div>
+        <a href="#" class="catalog__button">
+            <p class="catalog__button_text">Купить</p>
+        </a>
+        <div class="catalog__heart">
+            <svg width="46" height="42" viewBox="0 0 46 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="catalog__heart_mod" d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z" fill="white" fill-opacity="0.5"/>
+            </svg>
+        </div>
+    </div>
+    <div class="catalog__item" data-price="20000">
+        <img class="catalog__item_img" src="img/cat3.jpg" alt="">
+        <div class="catalog__content">
+            <a href="#"><h4 class="catalog__heading">Кот полосатый</h4></a>
+            <div class="catalog__description">
+                <div class="catalog__description_line">
+                    <p class="catalog__text">Коричневый окрас</p>
+                </div>
+                <div>
+                    <p class="catalog__text_bold">2 мес.</p>
+                    <p class="catalog__text">Возраст</p>
+                </div>
+                <div>
+                    <p class="catalog__text_bold">4</p>
+                    <p class="catalog__text">Кол-во лап</p>
+                </div>
+            </div>
+            <h5 class="catalog__price">20 000 руб.</h5>
+        </div>
+        <a href="#" class="catalog__button">
+            <p class="catalog__button_text">Купить</p>
+        </a>
+        <div class="catalog__heart">
+            <svg width="46" height="42" viewBox="0 0 46 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="catalog__heart_mod" d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z" fill="white" fill-opacity="0.5"/>
+            </svg>
+        </div>
+    </div>
+    <div class="catalog__item" data-price="25000">
+        <img class="catalog__item_img" src="img/cat1.jpg" alt="">
+        <div class="catalog__content">
+            <a href="#"><h4 class="catalog__heading">Кот полосатый</h4></a>
+            <div class="catalog__description">
+                <div class="catalog__description_line">
+                    <p class="catalog__text">Коричневый окрас</p>
+                </div>
+                <div>
+                    <p class="catalog__text_bold">2 мес.</p>
+                    <p class="catalog__text">Возраст</p>
+                </div>
+                <div>
+                    <p class="catalog__text_bold">4</p>
+                    <p class="catalog__text">Кол-во лап</p>
+                </div>
+            </div>
+            <h5 class="catalog__price">25 000 руб.</h5>
+        </div>
+        <a href="#" class="catalog__button">
+            <p class="catalog__button_text">Купить</p>
+        </a>
+        <div class="catalog__heart">
+            <svg width="46" height="42" viewBox="0 0 46 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="catalog__heart_mod" d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z" fill="white" fill-opacity="0.5"/>
+            </svg>
+        </div>
+    </div>
+    <div class="catalog__item" data-price="30000">
+        <img class="catalog__item_img" src="img/cat3.jpg" alt="">
+        <div class="catalog__content">
+            <a href="#"><h4 class="catalog__heading">Кот полосатый</h4></a>
+            <div class="catalog__description">
+                <div class="catalog__description_line">
+                    <p class="catalog__text">Коричневый окрас</p>
+                </div>
+                <div>
+                    <p class="catalog__text_bold">2 мес.</p>
+                    <p class="catalog__text">Возраст</p>
+                </div>
+                <div>
+                    <p class="catalog__text_bold">4</p>
+                    <p class="catalog__text">Кол-во лап</p>
+                </div>
+            </div>
+            <h5 class="catalog__price">30 000 руб.</h5>
+        </div>
+        <a href="#" class="catalog__button">
+            <p class="catalog__button_text">Купить</p>
+        </a>
+        <div class="catalog__heart">
+            <svg width="46" height="42" viewBox="0 0 46 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="catalog__heart_mod" d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z" fill="white" fill-opacity="0.5"/>
+            </svg>
+        </div>
+        <div class="catalog__discount">
+            <p class="catalog__discount_text">-40%</p>
+        </div>
+    </div>
+    <div class="catalog__item" data-price="10000">
+        <img class="catalog__item_img" src="img/cat2.jpg" alt="">
+        <div class="catalog__content">
+            <a href="#"><h4 class="catalog__heading">Кот полосатый</h4></a>
+            <div class="catalog__description">
+                <div class="catalog__description_line">
+                    <p class="catalog__text">Коричневый окрас</p>
+                </div>
+                <div>
+                    <p class="catalog__text_bold">2 мес.</p>
+                    <p class="catalog__text">Возраст</p>
+                </div>
+                <div>
+                    <p class="catalog__text_bold">4</p>
+                    <p class="catalog__text">Кол-во лап</p>
+                </div>
+            </div>
+            <h5 class="catalog__price">10 000 руб.</h5>
+        </div>
+        <a href="#" class="catalog__button">
+            <p class="catalog__button_text">Купить</p>
+        </a>
+        <div class="catalog__heart">
+            <svg width="46" height="42" viewBox="0 0 46 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="catalog__heart_mod" d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z" fill="white" fill-opacity="0.5"/>
+            </svg>
+        </div>
+    </div>
+</div>
+<div class="container-button">
+    <a href="#" class="container-button__link">Показать еще 20</a>
+</div>
+<footer class="footer">
+<div class="footer__left">
+    <h1 class="footer__heading">Успей купить!</h1>
+    <h2 class="footer__text">Подпишись и успей словить все акции</h2>
+</div>
+    <div class="footer__right">
+        <form action="#" class="footer__subscribe">
+            <input class="footer__subscribe_email" type="email" placeholder="Email" name="email">
+            <input class="footer__subscribe_button" type="submit" value="Подписаться">
+            <p class="footer__subscribe_radio-text">
+                <input class="footer__subscribe_radio" type="checkbox" name="name" id="checkbox">
+                <label for="checkbox"></label>
+                Подписаться на новости
+            </p>
+        </form>
+    </div>
+</footer>
+<div class="btnUp btnUp-visible">
+    <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.29764 0.999386L0.287559 9.00962C0.102145 9.19488 -8.06437e-08 9.4422 -6.91167e-08 9.7059C-5.75898e-08 9.96961 0.102145 10.2169 0.287559 10.4022L0.87731 10.9921C1.2616 11.3759 1.88618 11.3759 2.26988 10.9921L8.99627 4.2657L15.7301 10.9996C15.9155 11.1848 16.1627 11.2871 16.4263 11.2871C16.6901 11.2871 16.9373 11.1848 17.1228 10.9995L17.7124 10.4097C17.8979 10.2242 18 9.97707 18 9.71337C18 9.44966 17.8979 9.20234 17.7124 9.01708L9.69504 0.999386C9.50904 0.813681 9.26071 0.711682 8.99671 0.712267C8.73169 0.711682 8.48349 0.813681 8.29764 0.999386Z" fill="white"/>
+    </svg>
+</div>
+<script src="js/script.js"></script>
+<script src="js/sort.js"></script>
+</body>
+</html>
