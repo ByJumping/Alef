@@ -112,7 +112,7 @@ a
   margin-bottom: 68px
   display: flex
   flex-wrap: wrap
-  justify-content: space-between
+  justify-content: space-around
   &__item
     max-width: 380px
     margin-bottom: 23px
@@ -315,7 +315,10 @@ a
 
 
 //media
-
+@media (max-width: 1199px)
+  .header__container
+    margin-right: 0
+    margin-left: 0
 @media (max-width: 1024px)
   .center
     padding-left: calc(50% - 368px)

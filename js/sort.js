@@ -1,9 +1,10 @@
 window.addEventListener('load', function () {
     let list = document.querySelector('#catalog')
-    let button = document.querySelector('.sort__item')
+    let sort = document.querySelector('.sort__item')
     let items = document.querySelectorAll('.catalog__item')
 
-    button.addEventListener('click', function () {
+    sort.addEventListener('click', function (e) {
+        e.preventDefault()
         let sorted = [...items].sort(function (a, b) {
             return a.dataset.price - b.dataset.price
         })

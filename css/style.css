@@ -131,7 +131,7 @@ a {
   margin-bottom: 68px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .catalog__item {
   max-width: 380px;
@@ -370,6 +370,12 @@ a {
   outline: 1px solid red;
 }
 
+@media (max-width: 1199px) {
+  .header__container {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
 @media (max-width: 1024px) {
   .center {
     padding-left: calc(50% - 368px);
