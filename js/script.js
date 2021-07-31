@@ -7,6 +7,8 @@ window.addEventListener('load', function () {
     let patterns = {
         email: /^.+@.+\..+$/,
     }
+    let favorite = document.querySelector('.favorite')
+
     btnUp.addEventListener('click', function(){
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
@@ -33,6 +35,17 @@ window.addEventListener('load', function () {
     hearts.forEach(heart =>{
         heart.addEventListener('click', () =>{
             heart.classList.toggle('heart_opacity')
+            if (heart.classList.contains('heart_opacity')) {
+                favorite.innerHTML = "<h2>Добавлено в избранное!</h2>"
+                    setTimeout(function () {
+                        favorite.innerHTML = ''
+                }, 1500)
+            } else {
+                favorite.innerHTML = "<h2>Удалено из избранного!</h2>"
+                setTimeout(function () {
+                    favorite.innerHTML = ''
+                }, 1500)
+            }
         })
     })
 

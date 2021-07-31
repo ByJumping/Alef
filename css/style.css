@@ -378,6 +378,16 @@ a {
   outline: 1px solid red;
 }
 
+.favorite {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
+.favorite_add {
+  transition: 1s;
+}
+
 @media (max-width: 1199px) {
   .header__container {
     margin-right: 0;
