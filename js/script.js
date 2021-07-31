@@ -11,13 +11,14 @@ window.addEventListener('load', function () {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
+
     window.addEventListener('scroll', function() {
         let pos = window.pageYOffset;
 
         if (pos > window.innerHeight) {
-            btnUp.classList.add('btnUp-visible');
-        } else {
             btnUp.classList.remove('btnUp-visible');
+        } else {
+            btnUp.classList.add('btnUp-visible');
         }
     })
 
@@ -31,8 +32,7 @@ window.addEventListener('load', function () {
 
     hearts.forEach(heart =>{
         heart.addEventListener('click', () =>{
-            heart.style.fillOpacity = '1'
-            console.log('Добавлено в избранное!')
+            heart.classList.toggle('heart_opacity')
         })
     })
 

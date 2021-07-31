@@ -219,6 +219,10 @@ a {
 .catalog__heart_mod:hover {
   fill-opacity: 1;
 }
+.catalog__heart_mod:active {
+  transition: 0s;
+  filter: blur(2px);
+}
 .catalog__discount {
   width: 78px;
   height: 39px;
@@ -235,6 +239,10 @@ a {
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
+}
+
+.heart_opacity {
+  fill-opacity: 1;
 }
 
 .container-button {
@@ -354,7 +362,7 @@ a {
   background: #6EBBD3;
   width: 59px;
   height: 59px;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -363,7 +371,7 @@ a {
 }
 
 .btnUp-visible {
-  display: flex;
+  display: none;
 }
 
 .err {
